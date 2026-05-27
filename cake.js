@@ -30,6 +30,13 @@ document.getElementById("cutSound");
 
 cutSound.load();
 
+const applause =
+document.getElementById("applause");
+
+/* PRELOAD */
+
+applause.load();
+
 /* =========================================
    MOUSE BLUSH
 ========================================= */
@@ -150,6 +157,11 @@ function cutCake(){
     cutSound.currentTime = 0;
 
 cutSound.play();
+
+applause.currentTime = 0;
+
+applause.play();
+
 
     /* LEFT */
 
