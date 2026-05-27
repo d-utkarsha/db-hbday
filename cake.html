@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DB HBD 💛</title>
+
+    <!-- FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="cake.css">
+
+</head>
+
+<body>
+
+    <!-- BLUSH -->
+
+    <div class="mouse-blush"></div>
+
+    <!-- MAIN AREA -->
+
+    <div class="cake-scene">
+
+        <!-- INSTRUCTION -->
+
+        <p class="instruction"
+           id="instructionText">
+
+            Swipe on the screen to Cut the Cake
+
+        </p>
+
+        <!-- CAKE AREA -->
+
+        <div class="cake-wrapper"
+             id="cakeWrapper">
+
+            <!-- FULL CAKE -->
+
+            <img src="images/cake.png"
+                 class="cake-full"
+                 id="cakeFull">
+
+            <!-- LEFT HALF -->
+
+            <img src="images/cake.png"
+                 class="cake-half left-half"
+                 id="leftCake">
+
+            <!-- RIGHT HALF -->
+
+            <img src="images/cake.png"
+                 class="cake-half right-half"
+                 id="rightCake">
+
+            <!-- SWIPE LINE -->
+
+            <div class="swipe-line"
+                 id="swipeLine">
+
+            </div>
+
+        </div>
+
+        <!-- NEXT SECTION -->
+
+        <div class="next-section"
+             id="nextSection">
+
+            <p>
+                🥳 sweetness levels increased 💛 🥳
+            </p>
+
+            <button onclick="moveNext()">
+
+                Move On ✨
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- LUXURY BLAST -->
+
+    <div class="blast-left"></div>
+
+    <div class="blast-right"></div>
+
+    <!-- Confetti -->
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <audio id="cakeMusic"
+       loop>
+
+  <source src="music/cake.mp3"
+          type="audio/mpeg">
+
+</audio>
+
+<!-- CAKE CUT SOUND -->
+
+<audio id="cutSound"
+       preload="auto">
+
+  <source src="music/popper.mp3"
+          type="audio/mpeg">
+
+</audio>
+
+    <script src="cake.js"></script>
+    <div class="page-transition"></div>
+</body>
+
+</html>

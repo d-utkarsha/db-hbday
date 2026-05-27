@@ -1,0 +1,748 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body{
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(255,248,231,0.12),
+        rgba(255,248,231,0.12)
+    ),
+    url("images/backgrnd.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    animation:
+    pageFade 1.4s ease;
+
+    animation:
+    backgroundPop 1.8s ease;    
+}
+
+/* =========================================
+   DREAMY BLUSH OVERLAY
+========================================= */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+        circle at 20% 30%,
+        rgba(255,183,197,0.16),
+        transparent 28%
+    ),
+
+    radial-gradient(
+        circle at 80% 25%,
+        rgba(255,214,102,0.14),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 50% 75%,
+        rgba(255,240,200,0.12),
+        transparent 32%
+    );
+
+    pointer-events:none;
+
+    z-index:0;
+
+    animation:
+    blushFloat 12s ease-in-out infinite alternate;
+}
+/* =========================================
+   BLUSH
+========================================= */
+
+.mouse-blush{
+
+    position:fixed;
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,0.12),
+        transparent 70%
+    );
+
+    filter:blur(45px);
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:1;
+}
+/* =========================================
+   MOUSE BLUSH GLOW
+========================================= */
+
+.mouse-blush{
+
+    position:fixed;
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,0.18),
+        transparent 70%
+    );
+
+    filter:blur(40px);
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:1;
+
+    transition:
+    left 0.08s linear,
+    top 0.08s linear;
+}
+
+/* =========================================
+   MAIN GLASS CARD
+========================================= */
+
+.hero-card{
+
+    width:650px;
+
+    height:260px;
+
+    padding:30px 20px;
+
+    border-radius:38px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.18),
+        rgba(255,255,255,0.10)
+    );
+
+    backdrop-filter:blur(18px);
+
+    border:
+    1px solid rgba(255,255,255,0.24);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.08);
+
+    overflow:hidden;
+
+    position:absolute;
+
+    top:60%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:2;
+
+    transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+
+    animation:
+    cardPop 1.2s cubic-bezier(.17,.84,.44,1);
+}
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.hero-card:hover{
+
+    box-shadow:
+    0 12px 50px rgba(255,183,77,0.22);
+
+    transform:
+    translate(-50%,-50%)
+    scale(1.015);
+}
+
+/* =========================================
+   GLASS SHINE
+========================================= */
+
+.hero-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:420px;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.22),
+        transparent
+    );
+
+    top:-120px;
+    left:-30px;
+
+    transform:rotate(24deg);
+
+    animation:
+    shineMove 5s ease-in-out infinite;
+}
+
+/* =========================================
+   TOP TEXT
+========================================= */
+
+.top-line{
+
+    font-size:0.82rem;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#9b7600;
+
+    margin-bottom:20px;
+
+    font-weight:500;
+
+    animation:
+    fadeUp 1s ease;
+}
+
+/* =========================================
+   NAME
+========================================= */
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:5.4rem;
+
+    color:#6b3f00;
+
+    font-weight:400;
+
+    line-height:1;
+
+    margin-bottom:5px;
+
+    text-shadow:
+    0 4px 14px rgba(255,255,255,0.25);
+
+    animation:
+    namePop 1.4s ease;
+}
+
+/* =========================================
+   YOU TURNED 20
+========================================= */
+
+.turns-text{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2rem;
+
+    color:#d18d00;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    animation:
+    fadeUp 1.3s ease;
+}
+
+/* =========================================
+   SWEET TEXT
+========================================= */
+
+.sub-text{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:#7b5b00;
+
+    max-width:480px;
+
+    margin:auto;
+
+    font-weight:400;
+
+    animation:
+    fadeUp 1.6s ease;
+}
+
+/* =========================================
+   QUESTION SECTION
+========================================= */
+
+.question-section{
+
+    margin-top:600px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    z-index:2;
+
+    animation:
+    fadeUp 2s ease;
+}
+
+/* =========================================
+   QUESTION HEADING
+========================================= */
+
+.question-section h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2.5rem;
+
+    color:#6b4b00;
+
+    margin-bottom:10px;
+
+    animation:
+    pulseText 3s ease infinite;
+}
+
+/* =========================================
+   READY TEXT
+========================================= */
+
+.ready-text{
+
+    color:#8b7140;
+
+    font-size:1rem;
+
+    margin-bottom:26px;
+}
+
+/* =========================================
+   BUTTON AREA
+========================================= */
+
+.btn-wrapper{
+
+    width:420px;
+
+    height:80px;
+
+    position:relative;
+
+    top:-20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:50px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button{
+
+    width:135px;
+
+    padding:15px 0;
+
+    border:none;
+
+    border-radius:40px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+
+    font-family:'Poppins',sans-serif;
+
+    box-shadow:
+    0 8px 24px rgba(0,0,0,0.10);
+
+    animation:
+    buttonPop 1.6s ease;
+}
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+button:hover{
+
+    transform:
+    translateY(-4px)
+    scale(1.06);
+
+    filter:brightness(1.04);
+}
+
+/* =========================================
+   YES BUTTON
+========================================= */
+
+.yes-btn{
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffd54f,
+        #ffad28
+    );
+
+    color:#6b4b00;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* Glow */
+
+.yes-btn:hover{
+
+    box-shadow:
+    0 0 22px rgba(255,193,7,0.5),
+    0 0 42px rgba(255,193,7,0.22);
+}
+
+/* =========================================
+   NO BUTTON
+========================================= */
+
+.no-btn{
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffe0b2,
+        #ffccbc
+    );
+
+    color:#6b4b00;
+
+    position:relative;
+}
+
+/* Glow */
+
+.no-btn:hover{
+
+    box-shadow:
+    0 0 20px rgba(255,138,101,0.35),
+    0 0 38px rgba(255,138,101,0.18);
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes cardPop{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translate(-50%,-50%)
+        scale(0.85);
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+    }
+}
+
+@keyframes fadeUp{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translateY(25px);
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+}
+
+@keyframes namePop{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        scale(0.7);
+    }
+
+    60%{
+
+        transform:
+        scale(1.05);
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+    }
+}
+
+@keyframes buttonPop{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translateY(20px)
+        scale(0.8);
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        translateY(0)
+        scale(1);
+    }
+}
+
+@keyframes pulseText{
+
+    0%{
+
+        transform:scale(1);
+    }
+
+    50%{
+
+        transform:scale(1.03);
+    }
+
+    100%{
+
+        transform:scale(1);
+    }
+}
+
+@keyframes shineMove{
+
+    0%{
+
+        left:-60px;
+    }
+
+    50%{
+
+        left:120%;
+    }
+
+    100%{
+
+        left:-60px;
+    }
+}
+
+@keyframes blushFloat{
+
+    0%{
+
+        transform:scale(1);
+    }
+
+    100%{
+
+        transform:scale(1.08);
+    }
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+    }
+
+    to{
+
+        opacity:1;
+    }
+}
+
+/* =========================================
+   POP OUT ANIMATION
+========================================= */
+
+/* =========================================
+   HERO CARD POP OUT
+========================================= */
+
+.hero-pop-out{
+
+    animation:
+    heroPopOut 0.85s cubic-bezier(.17,.84,.44,1) forwards;
+}
+
+@keyframes heroPopOut{
+
+    0%{
+
+        opacity:1;
+
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+        translate(-50%,-50%)
+        scale(0.82);
+    }
+}
+
+/* =========================================
+   QUESTION SECTION POP OUT
+========================================= */
+
+.question-pop-out{
+
+    animation:
+    questionPopOut 0.85s cubic-bezier(.17,.84,.44,1) forwards;
+}
+
+@keyframes questionPopOut{
+
+    0%{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+        scale(0.82);
+    }
+}
+
+/* =========================================
+   POP OUT KEYFRAMES
+========================================= */
+
+@keyframes popOut{
+
+    0%{
+
+        opacity:1;
+
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+        translate(-50%,-50%)
+        scale(0.82);
+    }
+}
