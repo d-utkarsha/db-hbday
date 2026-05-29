@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>DB HBD 💛</title>
+
+  <link rel="stylesheet"
+        href="memory.css">
+
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Caveat:wght@500;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap"
+rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- MUSIC -->
+
+  <audio id="memoryMusic"
+         autoplay
+         loop>
+
+    <source src="music/memory.mp3"
+            type="audio/mpeg">
+
+  </audio>
+
+  <!-- INTRO SCREEN -->
+
+  <div class="intro-screen"
+       id="introScreen">
+
+    <h1>
+
+      Every moment with you became
+      a memory worth keeping...
+
+    </h1>
+
+  </div>
+
+  <!-- MAIN MEMORY PAGE -->
+
+  <div class="memory-scene"
+       id="memoryScene">
+
+    <!-- BACKGROUND -->
+
+    <img src="images/memorybckgrnd.png"
+         class="background-image">
+
+    <!-- TORCH -->
+
+    <div class="torch"></div>
+
+    <!-- POLAROID IMAGES -->
+
+    <!-- MEMORY 1 -->
+
+    <div class="memory mem1"
+         data-img="images/db1.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db1.jpg">
+
+    </div>
+
+    <!-- MEMORY 2 -->
+
+    <div class="memory mem2"
+         data-img="images/db2.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db2.jpg">
+
+    </div>
+
+    <!-- MEMORY 3 -->
+
+    <div class="memory mem3"
+         data-img="images/db3.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db3.jpg">
+
+    </div>
+
+    <!-- MEMORY 4 -->
+
+    <div class="memory mem4"
+         data-img="images/db4.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db4.jpg">
+
+    </div>
+
+    <!-- MEMORY 5 -->
+
+    <div class="memory mem5"
+         data-img="images/db5.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db5.jpg">
+
+    </div>
+
+    <!-- MEMORY 6 -->
+
+    <div class="memory mem6"
+         data-img="images/db6.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db6.jpg">
+
+    </div>
+
+    <!-- MEMORY 7 -->
+
+    <div class="memory mem7"
+         data-img="images/db7.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db7.jpg">
+
+    </div>
+
+    <!-- MEMORY 8 -->
+
+    <div class="memory mem8"
+         data-img="images/db8.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db8.jpg">
+
+    </div>
+
+    <!-- MEMORY 9 -->
+
+    <div class="memory mem9"
+         data-img="images/db9.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db9.jpg">
+
+    </div>
+
+    <!-- MEMORY 10 -->
+
+    <div class="memory mem10"
+         data-img="images/db10.jpg"
+         data-msg="Your handwritten memory here ✨">
+
+      <img src="images/db10.jpg">
+
+    </div>
+
+    <!-- BOTTOM UI -->
+
+    <div class="bottom-ui">
+
+      <p>
+
+        Click on any Memory to View it...
+
+      </p>
+
+      <button id="nextBtn">
+
+        Next   →
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- POPUP -->
+
+  <div class="popup"
+       id="popup">
+
+    <div class="popup-box">
+
+      <button id="closeBtn"
+              class="close-btn">
+
+        ✕
+
+      </button>
+
+      <img id="popupImg">
+
+      <p id="popupText">
+
+        Your handwritten memory here ✨
+
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="memory.js"></script>
+
+</body>
+
+</html>

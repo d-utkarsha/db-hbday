@@ -256,12 +256,17 @@ function moveNext(){
 
     /* NEXT PAGE */
 
-    setTimeout(()=>{
+const overlay =
+document.getElementById("fadeOverlay");
 
-        window.location.href =
-        "memory.html";
+overlay.classList.add("active");
 
-    },900);
+setTimeout(()=>{
+
+  window.location.href =
+  "memory.html";
+
+},2000);
 }
 
 /* =========================================
