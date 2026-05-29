@@ -373,7 +373,7 @@ body{
     position:absolute;
 
     left:20%;
-    top:22%;
+    top:25%;
 
     width:270px;
 
@@ -411,9 +411,9 @@ body{
     position:absolute;
 
     right:18%;
-    top:22%;
+    top:25%;
 
-    width:320px;
+    width:300px;
 
     opacity:0;
 
@@ -584,13 +584,13 @@ body{
     position:absolute;
 
     left:50%;
-    bottom:17px;
+    bottom:8px;
 
     transform:
     translateX(-50%);
 
     padding:
-    14px 42px;
+    10px 38px;
 
     border:none;
 
@@ -605,7 +605,7 @@ body{
 
     color:#5d3900;
 
-    font-size:1.1rem;
+    font-size:1rem;
 
         font-family:'Marcellus',serif;
     font-weight:600;
