@@ -77,10 +77,14 @@ nextBtn.addEventListener("click",()=>{
   document.body.style.opacity =
   "0";
 
-  setTimeout(()=>{
+document.body.classList.add(
+"memory-exit"
+);
 
-    window.location.href =
-    "giftbox.html";
+setTimeout(()=>{
 
-  },1000);
+ window.location.href="gift.html";
+
+},2500);
+
 });

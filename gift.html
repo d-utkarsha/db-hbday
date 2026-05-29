@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DB HBD 💛</title>
+
+    <link rel="stylesheet"
+          href="gift.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap"
+          rel="stylesheet">
+
+          <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+
+    <div class="background">
+
+        <img src="images/giftbg.png"
+             alt="Temple Background">
+
+    </div>
+
+    <!-- SPOTLIGHT -->
+
+    <div class="spotlight"></div>
+
+    <!-- MEMORY DUST -->
+
+    <div id="dustContainer"></div>
+
+    <!-- WHITE REVEAL -->
+
+    <div id="whiteFlash"></div>
+
+    <!-- GIFT SCENE -->
+
+    <section id="giftScene">
+
+        <h1 class="giftTitle">
+
+            One Last Surprise Awaits...
+
+        </h1>
+        <h2 class="giftClick">
+
+            Click on the gift to Open It!
+
+        </h2>
+
+        <div class="giftContainer">
+
+            <!-- FORMATION PARTICLES -->
+
+            <div id="giftFormation"></div>
+
+            <!-- CLOSED GIFT -->
+
+            <img src="images/giftbox.png"
+                 id="giftClosed"
+                 alt="Gift Box">
+
+            <!-- OPEN GIFT -->
+
+            <img src="images/giftboxopen.png"
+                 id="giftOpened"
+                 alt="Opened Gift">
+
+                 <div class="giftGlow"></div>
+
+        </div>
+
+    </section>
+
+    <!-- CHOICE SCENE -->
+
+    <section id="choiceScene">
+
+        <img src="images/envelope.png"
+             id="envelope"
+             alt="Envelope">
+
+        <img src="images/reel.png"
+             id="reel"
+             alt="Reel">
+
+    </section>
+
+    <!-- LETTER SCENE -->
+
+    <section id="letterScene">
+
+        <button id="closeLetter"
+                class="backBtn">
+
+            ←
+
+        </button>
+
+        <div class="letterContainer">
+
+            <img src="images/letter.png"
+                 id="openedLetter"
+                 alt="Letter">
+
+            <div class="letterText">
+
+                Dear Dhanvi,
+
+                <br><br>
+
+                Replace this section with your
+                final birthday letter.
+
+                <br><br>
+
+                You can make this as long
+                as you want later.
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- REEL SCENE -->
+
+    <section id="reelScene">
+
+        <button id="closeReel"
+                class="backBtn">
+
+            ←
+
+        </button>
+
+        <div class="reelContainer">
+
+    <video id="memoryVideo"
+           playsinline
+           controls>
+
+        <source src="images/dbvid.mp4"
+                type="video/mp4">
+
+    </video>
+
+</div>
+
+    </section>
+
+    <!-- CONTINUE -->
+
+    <button id="continueBtn">
+
+        Continue →
+
+    </button>
+
+    <!-- MUSIC -->
+
+    <audio id="bgMusic"
+           loop>
+
+        <source src="music/memory.mp3"
+                type="audio/mpeg">
+
+    </audio>
+
+    <script src="gift.js"></script>
+
+</body>
+
+</html>

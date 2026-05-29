@@ -527,3 +527,25 @@ button:hover{
     scale(1);
   }
 }
+
+.memory-exit .memory{
+
+ animation:
+ dissolve 2s forwards;
+}
+
+@keyframes dissolve{
+
+ 0%{
+
+  opacity:1;
+ }
+
+ 100%{
+
+  opacity:0;
+
+  filter:
+  blur(10px);
+ }
+}
