@@ -472,7 +472,7 @@ window.addEventListener(
 
         thankyouMusic.volume = volume;
 
-        if(volume >= 0.4){
+        if(volume >= 0.25){
 
             clearInterval(
             fadeIn
