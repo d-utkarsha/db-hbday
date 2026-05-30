@@ -1,0 +1,140 @@
+submitBtn.addEventListener(
+"click",
+async ()=>{
+
+    const rating =
+
+Number(slider.value) >= 10
+
+? "1000"
+
+: Number(slider.value).toFixed(1);
+
+    const feedback =
+    feedbackText.value.trim();
+
+    if(feedback === ""){
+
+        alert(
+        "Please write something before leaving 💛"
+        );
+
+        return;
+    }
+
+    submitBtn.disabled =
+    true;
+
+    submitBtn.innerHTML =
+    "Sending...";
+
+    try{
+
+        await emailjs.send(
+
+        "service_4sisino",
+
+        "template_bz1lrjk",
+
+        {
+
+            rating:
+            rating,
+
+            feedback:
+            feedback
+
+        }
+
+        );
+
+        feedbackScene.classList.add(
+"dissolve"
+);
+
+rightGroup.classList.add(
+"dissolve"
+);
+
+
+
+setTimeout(()=>{
+
+    finalScene.classList.add(
+    "show"
+    );
+
+    cutSound.play();
+
+    /* LEFT */
+
+confetti({
+
+    particleCount:260,
+
+    angle:60,
+
+    spread:55,
+
+    startVelocity:70,
+
+    gravity:0.6,
+
+    ticks:350,
+
+    scalar:1.2,
+
+    origin:{
+
+        x:0,
+
+        y:1
+    }
+});
+
+/* RIGHT */
+
+confetti({
+
+    particleCount:260,
+
+    angle:120,
+
+    spread:55,
+
+    startVelocity:70,
+
+    gravity:0.6,
+
+    ticks:350,
+
+    scalar:1.2,
+
+    origin:{
+
+        x:1,
+
+        y:1
+    }
+});
+
+},1800);
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+        alert(
+        "Couldn't send feedback 😭"
+        );
+
+        submitBtn.disabled =
+        false;
+
+        submitBtn.innerHTML =
+        "Send Feedback 💛";
+    }
+
+});
