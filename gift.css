@@ -565,8 +565,10 @@ body{
 
     border-radius:50%;
 
-    background:
-    rgba(254, 211, 39, 0.9);
+  background:
+  linear-gradient(135deg,
+  #ffd86e,
+  #dc9110);
 
     cursor:pointer;
 

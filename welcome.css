@@ -33,6 +33,26 @@ body{
     linear-gradient(
         rgba(255,248,231,0.12),
         rgba(255,248,231,0.12)
+    );
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+animation:
+pageFade 1s ease;  
+}
+.bg-layer{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(255,248,231,0.12),
+        rgba(255,248,231,0.12)
     ),
     url("images/backgrnd.png");
 
@@ -42,13 +62,12 @@ body{
 
     background-repeat:no-repeat;
 
-    animation:
-    pageFade 1.4s ease;
+    z-index:-1;
 
     animation:
-    backgroundPop 1.8s ease;    
+    bgPop 1.2s cubic-bezier(.17,.84,.44,1)
+    forwards;
 }
-
 /* =========================================
    DREAMY BLUSH OVERLAY
 ========================================= */
@@ -132,7 +151,7 @@ body::before{
     background:
     radial-gradient(
         circle,
-        rgba(255,255,255,0.18),
+        rgba(246, 208, 84, 0.18),
         transparent 70%
     );
 
@@ -194,8 +213,13 @@ body::before{
     transform 0.45s ease,
     box-shadow 0.45s ease;
 
+    opacity:0;
+
     animation:
-    cardPop 1.2s cubic-bezier(.17,.84,.44,1);
+    cardPop 1.2s cubic-bezier(.17,.84,.44,1)
+    forwards;
+
+    animation-delay:0.8s;
 }
 
 /* =========================================
@@ -362,9 +386,15 @@ h1{
     color:#6b4b00;
 
     margin-bottom:10px;
+    
+    opacity:0;
 
-    animation:
-    pulseText 3s ease infinite;
+animation:
+cardPop 1.2s cubic-bezier(.17,.84,.44,1) forwards,
+pulseText 3s ease 2s infinite;
+
+animation-delay:1.2s, 0s;
+    
 }
 
 /* =========================================
@@ -378,6 +408,14 @@ h1{
     font-size:1rem;
 
     margin-bottom:26px;
+
+        opacity:0;
+
+    animation:
+    fadeUp 1.2s cubic-bezier(.17,.84,.44,1)
+    forwards;
+
+    animation-delay:0.8s;
 }
 
 /* =========================================
@@ -745,4 +783,30 @@ button:hover{
         translate(-50%,-50%)
         scale(0.82);
     }
+}
+
+@keyframes bgPop{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        scale(1.12);
+
+        filter:
+        blur(12px);
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+
+        filter:
+        blur(0px);
+    }
+
 }
