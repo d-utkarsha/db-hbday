@@ -50,7 +50,27 @@ memories.forEach(memory=>{
 
     popupText.innerHTML =
     memory.dataset.msg;
+
+    if(
+      memory.classList.contains(
+      "mem8"
+      )
+    ){
+
+      popupText.style.fontSize =
+      "1.2rem";
+
+    }
+
+    else{
+
+      popupText.style.fontSize =
+      "1.8rem";
+
+    }
+
   });
+
 });
 
 /* CLOSE */
