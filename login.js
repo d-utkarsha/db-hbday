@@ -140,3 +140,22 @@ localStorage.setItem(
 });
 
 localStorage.setItem("musicAllowed","true");
+
+const continueFullscreen =
+document.getElementById(
+"continueFullscreen"
+);
+
+const fullscreenPopup =
+document.getElementById(
+"fullscreenPopup"
+);
+
+continueFullscreen.addEventListener(
+"click",
+()=>{
+
+    fullscreenPopup.style.display =
+    "none";
+
+});

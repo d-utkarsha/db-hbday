@@ -414,9 +414,6 @@ function revealChoices(){
 
 }
 
-/* =========================
-   LETTER
-========================= */
 
 /* =========================
    LETTER
@@ -456,7 +453,7 @@ envelope.addEventListener(
 reel.addEventListener(
 "click",
 ()=>{
-
+bgMusic.pause();
     continueBtn.style.display =
     "none";
 
@@ -541,7 +538,7 @@ closeReel.addEventListener(
     reelViewed = true;
 
     checkCompletion();
-
+bgMusic.play();
 });
 
 

@@ -335,9 +335,25 @@ setTimeout(()=>{
     finalScene.classList.add(
     "show"
     );
+        if(krishnaCorner){
 
+            krishnaCorner.classList.add(
+            "moveTop"
+            );
+
+        }
     cutSound.play();
+        setTimeout(()=>{
 
+            if(fluteImage){
+
+                fluteImage.classList.add(
+                "show"
+                );
+
+            }
+
+        },1000);
     /* LEFT */
 
 confetti({

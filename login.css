@@ -390,7 +390,7 @@ body{
 
   position:absolute;
 
-  top:32px;
+  top:58px;
 
   padding:13px 28px;
 
@@ -400,7 +400,7 @@ body{
 
   backdrop-filter:blur(15px);
 
-  border:1px solid rgba(255,255,255,0.25);
+  border:0.5px solid rgba(0, 0, 0, 0.4);
 
   color:#8a6a00;
 
@@ -500,6 +500,7 @@ h1{
   gap:8px;
 
   margin-bottom:30px;
+
 }
 
 .password-boxes input{
@@ -513,6 +514,7 @@ h1{
   border-radius:14px;
 
   background:rgba(255,255,255,0.5);
+      border:0.5px solid rgba(0, 0, 0, 0.229);
 
   text-align:center;
 
@@ -1192,4 +1194,97 @@ button:hover{
     transform:
     scale(1);
   }
+}
+
+/* FULLSCREEN POPUP */
+
+#fullscreenPopup{
+
+  position:fixed;
+
+  inset:0;
+
+  background:rgba(0,0,0,.75);
+
+  backdrop-filter:blur(8px);
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  z-index:999999;
+}
+
+.fullscreenBox{
+
+  width:450px;
+
+  padding:40px;
+
+  text-align:center;
+
+  border-radius:25px;
+
+  background:rgba(63, 63, 63, 0.81);
+
+  backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,.25);
+}
+
+.fullscreenBox h2{
+  font-family:'Cormorant Garamond',serif;
+
+color:#ffd70d;
+  margin-bottom:15px;
+}
+
+.fullscreenBox p{
+
+  color:#ffffff;
+
+  margin-bottom:25px;
+}
+
+#fullscreenStatus{
+
+    margin-top:15px;
+
+    color:#ffffff;
+
+    font-size:1rem;
+}
+
+#continueFullscreen{
+  background:linear-gradient(
+    135deg,
+    #ffd54f,
+    #ffca28
+  );
+
+    margin-top:20px;
+}
+
+#krishnaCorner{
+
+    position:fixed;
+
+    left:25px;
+
+    bottom:20px;
+
+    width:90px;
+
+    height:auto;
+
+    z-index:999;
+
+    pointer-events:none;
+
+    opacity:.9;
+
+    transition:
+    all 1.5s ease;
 }

@@ -38,7 +38,7 @@ body{
 
   z-index:99999;
 
-  animation:introFade 7s forwards;
+  animation:introFade 5s forwards;
 }
 
 .intro-screen h1{
@@ -76,7 +76,7 @@ body{
 
   animation:sceneReveal 2s ease forwards;
 
-  animation-delay:6.5s;
+  animation-delay:4.5s;
 }
 
 /* BACKGROUND */
@@ -550,4 +550,26 @@ button:hover{
   filter:
   blur(10px);
  }
+}
+
+#krishnaCorner{
+
+    position:fixed;
+
+    left:25px;
+
+    bottom:20px;
+
+    width:90px;
+
+    height:auto;
+
+    z-index:999;
+
+    pointer-events:none;
+
+    opacity:.9;
+
+    transition:
+    all 1.5s ease;
 }
