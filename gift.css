@@ -205,7 +205,7 @@ body{
     animation:
     titleFade 2s ease forwards;
 
-    animation-delay:1s;
+    animation-delay:2.5s;
 
     transition:opacity .8s ease;
 }
@@ -236,7 +236,7 @@ body{
     animation:
     titleFade 2s ease forwards;
 
-    animation-delay:1s;
+    animation-delay:3s;
 
     transition:opacity .8s ease;
 }
