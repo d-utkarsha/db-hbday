@@ -99,3 +99,8 @@ setInterval(()=>{
   );
 
 },1000);
+
+const preloadBg = new Image();
+
+preloadBg.src =
+"images/welcome-bg.jpg";

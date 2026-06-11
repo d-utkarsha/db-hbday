@@ -31,7 +31,7 @@ setTimeout(()=>{
 
   scanComplete.style.display = "block";
 
-},3000);
+},6000);
 
 /* HIDE SCANNER */
 
@@ -39,7 +39,7 @@ setTimeout(()=>{
 
   scannerSection.style.display = "none";
 
-},4200);
+},8200);
 
 /* SHOW LOGS */
 
@@ -57,7 +57,7 @@ setTimeout(()=>{
 
   });
 
-},4300);
+},8300);
 
 /* APPROVED */
 
@@ -65,7 +65,7 @@ setTimeout(()=>{
 
   approved.classList.add("show");
 
-},8500);
+},12500);
 
 /* BUTTON */
 
@@ -73,7 +73,7 @@ setTimeout(()=>{
 
   nextBtn.classList.add("show");
 
-},9500);
+},13300);
 
 /* WARNING POPUP */
 
@@ -116,19 +116,6 @@ document.addEventListener("mousemove",(e)=>{
   e.clientY + "px";
 });
 
-
-/* =========================================
-   BACKGROUND MUSIC
-========================================= */
-/* const bgMusic =
-document.getElementById("bgMusic");
-
-bgMusic.volume = 0.35;
-
-if(localStorage.getItem("musicAllowed")){
-
-  bgMusic.play();
-} */
 
 /* =========================================
    CONTINUOUS MUSIC SYSTEM
