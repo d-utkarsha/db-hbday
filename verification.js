@@ -31,7 +31,7 @@ setTimeout(()=>{
 
   scanComplete.style.display = "block";
 
-},6000);
+},8000);
 
 /* HIDE SCANNER */
 
@@ -39,7 +39,7 @@ setTimeout(()=>{
 
   scannerSection.style.display = "none";
 
-},8200);
+},10200);
 
 /* SHOW LOGS */
 
@@ -57,7 +57,7 @@ setTimeout(()=>{
 
   });
 
-},8300);
+},10300);
 
 /* APPROVED */
 
@@ -65,7 +65,7 @@ setTimeout(()=>{
 
   approved.classList.add("show");
 
-},12500);
+},14500);
 
 /* BUTTON */
 
@@ -73,7 +73,7 @@ setTimeout(()=>{
 
   nextBtn.classList.add("show");
 
-},13300);
+},15300);
 
 /* WARNING POPUP */
 
